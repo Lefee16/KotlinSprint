@@ -6,9 +6,11 @@ fun main() {
     val ironOre = 11
     val buffPercent = 20
 
-    val bonusCrystalOre = crystalOre * buffPercent / 100
+    val bonusCrystalOre = crystalOre * buffPercent / ONE_HUNDRED
     println("bonus crystal: $bonusCrystalOre")
-    val bonusIronOre = ironOre * buffPercent / 100
+    val bonusIronOre = ironOre * buffPercent / ONE_HUNDRED
     println("bonus iron: $bonusIronOre")
 
 }
+
+const val ONE_HUNDRED = 100
