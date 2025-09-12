@@ -8,10 +8,13 @@ fun main() {
     val startMinute = 39
     val travelTimeInMinute = 457
 
-    val allMinute = startHour * 60 + startMinute + travelTimeInMinute
-    val endHour = (allMinute / 60) % 24
-    val endMinute = allMinute % 60
+    val allMinute = startHour * MINUTE_60 + startMinute + travelTimeInMinute
+    val endHour = (allMinute / MINUTE_60) % DAY_24
+    val endMinute = allMinute % MINUTE_60
 
     println("Время прибытия: $endHour:$endMinute")
 
 }
+
+const val MINUTE_60 = 60
+const val DAY_24 = 24
